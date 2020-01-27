@@ -4,7 +4,7 @@ pipeline{
         stages{
 		stage('--Build Docker--'){
 			steps{
-				sh '''
+				sh '''. ~/.bashrc
 				      docker-compose build
 				      docker-compose push
 				      '''
